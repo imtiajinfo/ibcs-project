@@ -1,0 +1,215 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	overflow: hidden;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.topbar{
+	background-color: #0A4D64;
+}
+.contact-icon{
+	width: 80%;
+	float: left;
+}
+.contact-icon i{
+	color: #ffffff;
+	font-size: 18px;
+	padding: 10px;
+}
+.social-icon{
+	width: 20%;
+	float: right;
+}
+.social-icon i{
+	color: #ffffff;
+	font-size: 18px;
+	padding: 10px;
+}
+.logo{
+	width: 30%;
+	float: left;
+	padding: 20px;
+}
+.logo img{
+	height: 65px;
+	width: 200px;
+}
+.navbar{
+	width: 60%;
+	float: right;
+}
+.navbar a{ 
+	float: left;
+	font-size: 18px;
+	text-align: center;
+	padding: 30px;
+	text-decoration: none;
+	color: #0A4D64;
+}
+.dropdown{
+	float: left;
+}
+.dropdown .btndrop{
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: inherit;
+	font-family: inherit;
+	padding: 30px 16px;
+	color: #0A4D64;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	width: 160px;
+}
+.dropdown-content a{
+	float: none;
+	color: #0A4D64;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content a:hover{
+	background-color: #ddd;
+}
+.slider img{
+	height: 450px;
+	width: 100%;
+}
+
+.heading h2{
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	padding: 30px;
+}
+.about-image{
+	float: left;
+	width: 45%;
+	padding: 10px;
+}
+.about-image img{
+	height: 350px;
+	width: 100%;
+}
+.about-content{
+	width: 45%;
+	float: right;
+	padding: 10px;
+	font-family: 'Oswald', sans-serif;
+}
+.about-content button{
+	border: none;
+	outline: none;
+	font-size: 18px;
+	background-color: #0A4D64;
+	color: #fff;
+	padding: 14px;
+	border-radius: 10px;
+}
+.service{
+	width: 220px;
+	float: left;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Grey Qo', cursive;
+}
+.service i{
+	font-size: 64px;
+	color: #0A4D64;
+}
+.team-area{
+
+}
+.team{
+	position: relative;
+	width: 240px;
+	float: left;
+	margin: 20px;
+}
+.team-image{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.overlay{
+	height: 80px;
+	position: absolute;
+	color: #fff;
+	background-color: rgba(0,0,0,0.2);
+	width: 100%;
+	bottom: 0;
+	font-size: 20px;
+	text-align: center;
+	opacity: 0;	
+	transition: .8s ease; 
+}
+.overlay p{
+	margin-top: -25px;
+}
+.team:hover .overlay {
+	opacity: 1;
+}
+.project-area{}
+.project{
+	width: 240px;
+	float: left;
+	margin: 20px;
+}
+.project img{
+	width: 240px;
+	height: 240px;
+	border: 5px solid #F7F5F5;
+}
+.project img:hover{
+	border-radius: 50%;
+	border: 5px solid red;
+	transition: .5s ease;
+}
+.map{
+	width: 45%;
+	float: left;
+}
+.message{
+	width: 45%;
+	float: right;
+	padding: 10px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  /*display: inline-block;*/
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
