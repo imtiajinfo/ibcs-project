@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+   <h3 id="test"></h3>
+    <form name="myform" action="" method="post" onsubmit="formvalid();return false;">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+             <tr>
+                <td>E-mail</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+             <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+       function formvalid(){
+           var name = document.myform.name.value;
+           if(!name){
+               alert("Please input your name");
+               return false;
+           }else{
+               var showname = "User name is: "+name;
+           }
+           var email = document.myform.email.value;
+           if(!email){
+               alert("Please input your email");
+               return false;
+           }else{
+               var showemail = "User E-mail is: "+email;
+           }
+           var password = document.myform.password.value;
+           if(password.length<=5){
+               alert("Password at least 6 digit");
+               return false;
+           }else{
+               alert("Password is protected");
+           }
+           document.getElementById("test").innerHTML = showname+"<br/>"+showemail;
+       }
+   </script>
+</body>
+</html>
